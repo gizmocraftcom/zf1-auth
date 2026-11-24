@@ -1,5 +1,5 @@
 {
-    "name": "diablomedia/zendframework1-auth",
+    "name": "gizmocraft/zendframework1-auth",
     "description": "Zend Framework 1 Auth component",
     "type": "library",
     "keywords": [
@@ -9,10 +9,40 @@
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-exception"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-session"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-config"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-json"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-xml"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-server"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-loader"
+        }
+    ],
     "require": {
-        "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
-        "diablomedia/zendframework1-exception": "^1.1.1",
-        "diablomedia/zendframework1-session": "^2.0.0"
+        "php": ">=8.5",
+        "gizmocraft/zendframework1-exception": "^2.0.0",
+        "gizmocraft/zendframework1-session": "^3.0.0"
     },
     "autoload": {
         "psr-0": {
@@ -46,10 +76,9 @@
         "style-check": "php-cs-fixer fix --dry-run -vv"
     },
     "suggest": {
-        "diablomedia/zendframework1-auth-adapter-dbtable": "DbTable based auth adapter",
-        "diablomedia/zendframework1-auth-adapter-openid": "OpenId based auth adapter",
-        "diablomedia/zendframework1-auth-adapter-ldap": "Ldap based auth adapter",
-        "diablomedia/zendframework1-auth-adapter-http": "Http based auth adapter"
+        "gizmocraft/zendframework1-auth-adapter-dbtable": "DbTable based auth adapter",
+        "gizmocraft/zendframework1-auth-adapter-ldap": "Ldap based auth adapter",
+        "gizmocraft/zendframework1-auth-adapter-http": "Http based auth adapter"
     },
     "config": {
         "allow-plugins": {
