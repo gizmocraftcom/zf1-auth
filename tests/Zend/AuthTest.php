@@ -20,6 +20,8 @@
  * @version    $Id $
  */
 
+use PHPUnit\Framework\Attributes\Group;
+
 /**
  * @group ZF-7882 - temp solution provided by {@link http://www.alexatnet.com/node/12}
  */
@@ -31,8 +33,8 @@ Zend_Session::start();
  * @subpackage UnitTests
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @group      Zend_Auth
  */
+#[Group('Zend_Auth')]
 class Zend_AuthTest extends PHPUnit\Framework\TestCase
 {
     /**
